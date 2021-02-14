@@ -6,17 +6,15 @@ setInterval(updateClock, 1000);
 
 function updateClock(){
 	let date = new Date();
-	let seconds = date.getSeconds() / 60;
-	let minutess = (date.getMinutes() + sec) / 60;
-	let hours = (date.getHours() + min) / 12;
-    
-    secs="rotate(" + (seconds * 360) + "deg)"
-    mines ="rotate(" + (minutess * 360) + "deg)"
-    hourss =  "rotate(" + (hours * 360) + "deg)"
-
-	sec.style.transform = secs;
-	min.style.transform = mines;
-	hour.style.transform = hourss;
+	let secus = date.getSeconds() / 60;
+	let minsu = (date.getMinutes() + secus) / 60;
+	let hourers = (date.getHours() + minsu) / 12;
+    allSec= "rotate(" + (secus * 360) + "deg)"
+    allMin = "rotate(" + (minsu * 360) + "deg)"
+    allHou = "rotate(" + (hourers * 360) + "deg)"
+	sec.style.transform = allSec;
+	min.style.transform = allMin;
+	hour.style.transform = allHou;
 }
 
 updateClock();
