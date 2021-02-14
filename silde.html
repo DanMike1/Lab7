@@ -1,24 +1,66 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./asset/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./asset/css/style.css">
 </head>
+
 <body>
+    <div class="slideshow-container container-fluid">
+        <div id="MySlide" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#MySlide" data-slide-to="0" class="active" id="meSlide1"></li>
+                <li data-target="#MySlide" data-slide-to="1" id="meSlide2"></li>
+                <li data-target="#MySlide" data-slide-to="2" id="meSlide3"></li>
+            </ol>
+            <div class="carousel-inner ">
+                <div class="carousel-item active overflow-hidden">
+                    <img src="https://picsum.photos/1024/768" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item overflow-hidden">
+                    <img src="https://picsum.photos/1024/768" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item overflow-hidden">
+                    <img src="https://picsum.photos/1024/768" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" href="#MySlide" role="button" data-slide="prev" type="button"
+                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" href="#MySlide" role="button" data-slide="next" type="button"
+                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
 
-<div class="slideshow-container">
 
-<div class="meSlide" id="meSlide">
-  <img id="img_" style="width:100vw" >
-</div>
 
-<a class="prev" id="prev" >&#10094;</a>
-<a class="next" id="next" >&#10095;</a>
 
-</div>
-<script src="./asset/js/slide.js"></script>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
+    <script src="./asset/js/slide.js"></script>
+
+
+
 
 </body>
-</html> 
+
+</html>
