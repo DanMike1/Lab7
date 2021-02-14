@@ -6,3 +6,7 @@
 .carousel-inner{
   height: 100vh;
 }
+
+.ui .segment{
+  height: 80px;
+}
